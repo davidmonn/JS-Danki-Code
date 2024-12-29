@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcoes</title>
+</head>
+<body>
+    <script>
+        // Function
+/*
+        function teste() {
+            // Executado ao chamar a funcao
+            console.log("Chamando a funcao testes!");
+        }
+
+        teste();
+
+        function teste2(nome, idade) {
+            console.log("O nome passado na function é:" + nome);
+            console.log("A idade é: " + idade);
+            console.log("--------------------");
+        }
+
+        teste2("David", 27);
+        teste2("Suzana", 24);
+*/
+
+        function pegarNome(parametro) {
+            if(parametro == 1) {
+                return "David";
+            } else {
+                return "Outro nome";
+            }
+        }
+
+        var nome = pegarNome(2);
+        
+        console.log("Valor pego de nosso return é: "+ nome);
+
+    </script>
+</body>
+</html>
