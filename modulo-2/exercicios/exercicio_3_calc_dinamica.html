@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Dinamica</title>
+</head>
+<body>
+
+    <script>
+        // Aplicacao de calculadora dinamica
+        // Queremos um numero inicial
+        //Queremos um sinal (Tipo de operacao)
+        // Queremos um numero final
+
+        var n1 = prompt("Informe o primeiro numero");
+
+        var sinal = prompt("Informe o Tipo de operacao por meio de sinal");
+        while(sinal != '+' && sinal != '-' && sinal != '*' && sinal != '/') {
+            alert("Por favor insira um sinal valido, como: +, - , *, /");
+            var sinal = prompt("Informe o tipo de operacao por meio de sinal");
+        }
+        var n2 = prompt("Informe o numero final");
+
+        if(sinal = '*') {
+            resultFinal = n1 * n2;
+        }else if(sinal = '-') {
+            resultFinal = n1 - n2;
+        } else if(sinal = '+') {
+            resultFinal = n1 + n2;
+        } else if(sinal = '/') {
+            resultFinal = n1 / n2;
+        }
+
+        alert("Resultado final = "+ resultFinal);
+
+    </script>
+    
+</body>
+</html>
