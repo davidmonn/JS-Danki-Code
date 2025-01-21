@@ -8,6 +8,11 @@
 <body>
     <script>
         var anoNasc = prompt("Informe sua data de nascimento");
+        while(anoNasc >= 2020) { // Aqui foi criado um loop ate o usuario colocar uma data corretamente.
+            alert("Por favor informe seu ano de nascimento corretamente.");
+            var anoNasc = prompt("Informe sua data de nascimento");
+        }
+
         var anoAtual = prompt("Informe ano atual.");
 
         calcIdade = anoAtual - anoNasc;
