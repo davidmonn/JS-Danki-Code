@@ -22,13 +22,19 @@
         }
         var n2 = prompt("Informe o numero final");
 
-        if(sinal = '*') {
+        //Funcoes para converter uma STR para numero
+        n1 = parseInt(n1);
+        n2 = parseInt(n2);
+
+        var resultFinal = 0;
+
+        if(sinal == '*') {
             resultFinal = n1 * n2;
-        }else if(sinal = '-') {
+        }else if(sinal == '-') {
             resultFinal = n1 - n2;
-        } else if(sinal = '+') {
+        } else if(sinal == '+') {
             resultFinal = n1 + n2;
-        } else if(sinal = '/') {
+        } else if(sinal == '/') {
             resultFinal = n1 / n2;
         }
 
