@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando Orientacao a Objetos</title>
+</head>
+<body>
+    
+    <script>
+        function Pessoa(){
+            this.nome = "David";
+            this.idade = 27;
+            this.profissao = "Programador";
+
+            this.printNome = function(numero) {
+                alert(numero);
+            }
+            this.returnAnimal = function(animal){
+                return animal;
+            }
+        }
+
+        function Animal(tipo,nome){
+            if(tipo == undefined) {
+                tipo = "Tipo de animal desconhecido";
+            }
+            if(nome == undefined) {
+                nome = "Nome do animal, desconhecido";
+            }
+            this.tipo = tipo;
+            this.nome = nome;
+        }
+
+        var pessoa = new Pessoa();
+        var animal = new Animal();
+
+        animal.tipo = "Gato";
+        animal.raca = "Persa";
+
+        alert(pessoa.returnAnimal(animal).tipo);
+
+    </script>
+
+</body>
+</html>
