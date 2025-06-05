@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+</head>
+<body>
+    <script>
+        
+        class Veiculo {
+            constructor(marca) {
+                this.marca = marca;
+            }
+
+            getMarca() {
+                return this.marca;
+            }
+
+        }
+
+        class Carro extends Veiculo {
+            constructor(marca, modelo) {
+                super(marca);
+                this.modelo = modelo;
+            }
+
+            getModelo() {
+                return this.modelo;
+            }
+
+        }
+
+        var meuCarro = new Carro("Celta", "2000");
+
+        alert(meuCarro.getMarca());
+        console.log(meuCarro.getModelo());
+
+    </script>
+</body>
+</html>
